@@ -31,3 +31,20 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Local Environment & Secrets ###
+.env
+application-local.yml
+application-local.properties
+application-dev.yml
+
+### Media & Uploads ###
+/uploads/
+/media/
+/storage/
+
+### Local Databases & OS Junk ###
+*.mv.db
+*.trace.db
+.DS_Store
+Thumbs.db
