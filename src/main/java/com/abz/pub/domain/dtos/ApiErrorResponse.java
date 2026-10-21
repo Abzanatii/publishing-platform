@@ -1,0 +1,29 @@
+package com.abz.pub.domain.dtos;
+
+import java.util.List;
+
+import org.springframework.validation.FieldError;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data 
+@Builder 
+@NoArgsConstructor 
+@AllArgsConstructor 
+public class ApiErrorResponse {
+    private int status;
+    private String message;
+    private List<FieldError> errors;
+
+    @Data 
+    @Builder 
+    @NoArgsConstructor 
+    @AllArgsConstructor 
+    public static class FeildError{
+        private String field;
+        private String message;
+    }
+}
